@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Shape&Color</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="controls">
+      <button onclick="setShape('circle')">Круг</button>
+      <button onclick="setShape('square')">Квадрат</button>
+   	<div class="color-buttons">
+            <button onclick="setColor('#E32636')" style="background:#E32636"></button>
+            <button onclick="setColor('#FDE910')" style="background:#FDE910"></button>
+            <button onclick="setColor('#138808')" style="background:#138808"></button>
+            <button onclick="setColor('#1560BD')" style="background:#1560BD"></button>
+   	</div>
+   	<input type="text" id="text-input" placeholder="Введите текст">
+      <button onclick="setText()">Добавить текст</button>
+		<button onclick="clearShape()">Очистить</button>
+   </div>
+   <div id="shape-container"></div>
+   <script src="script.js"></script>
+</body>
+</html>
